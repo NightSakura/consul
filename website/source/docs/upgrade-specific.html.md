@@ -14,6 +14,17 @@ details provided for their upgrades as a result of new features or changed
 behavior. This page is used to document those details separately from the
 standard upgrade flow.
 
+## Consul 1.1.0
+
+#### Upgrading to the new UI
+
+There is a new Consul UI available in beta. To check it out, set the
+environment variable `CONSUL_UI_BETA` to `true`. Without this environment
+variable, the web UI will default to the old version. So, to use the old UI
+version, either set `CONSUL_UI_BETA` to false, or don't include that environment
+variable at all.
+
+
 ## Consul 1.0.1
 
 #### Carefully Check and Remove Stale Servers During Rolling Upgrades
